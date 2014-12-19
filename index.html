@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <link rel = "stylesheet" href = "jquery.mobile-1.4.4.min.css">
+            <script src = "jquery-1.11.1.min.js"></script>
+        <script src = "jquery.mobile-1.4.4.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    
+     <script type="text/javascript" src="functions.js"></script>
+      <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+      
+     </head>  
+     <body onload="initialize()">
+<div data-role="page" id="pageOne" data-theme="b">
+<div data-role="header">
+	<h1> PERSONAL ASSISTANT</h1>
+     </div>
+	
+<div data-role="content">
+	<b>Your current location</b><br>
+<p id='location' style= 'font-size:100%' align="center">Finding the current location...</p>
+
+<div align="centre">
+
+     <h2>Welcome to Personal Assistant</h2>
+<ol data-role="listview">
+<li><a href="#pageTwo">Register</a></li>
+<li><a href="#pageThree">List All Meetings</a></li>
+<li><a href="#pageFour">SignUp for A Meeting</a></li>
+</ol>
+</div>
+ </div>
+</div>
+
+
+<div data-role="page" id="pageTwo" data-theme="b">
+<div data-role="header">
+	<h1> PERSONAL ASSISTANT</h1>
+     </div>
+	
+<div data-role="content">
+ <div data-role="controlgroup" data-type="horizontal" align ="center">
+<!-- <div align="centre"> -->
+
+     <h2>Please Register here</h2>
+Full Name <input type= "text" name="name"  id="name"/><br><br>
+        PhoneNumber <input type= "text" name="phonenumber"  id="phonenumber"/><br>
+        Email <input type= "text" name="email"  id="email"/><br>
+        Organisation <input type= "text" name="organisation"  id="organisation"/><br>
+        Username <input type= "text" name="username"  id="username"/><br>
+        Password <input type= "password" name="password" id="password">
+        <br>
+        <button text="submit" width="60%" name="submit" id="submit">Sign Up</button>
+        <br>
+        
+</div>
+ </div>
+</div>
+
+<div data-role="page" id="pageThree" data-theme="b">
+<div data-role="header">
+	<h1> PERSONAL ASSISTANT</h1>
+     </div>
+
+<div role="main" class="ui-content">
+            <button text="submit" width="60%" name="submit" id="list">List</button>
+            
+            <ul data-role="listview" id="listview">
+                
+        <li data-role="list-divider">
+                    
+                </li>
+                
+            </ul>
+            
+        </div>
+ </div>
+</div>
+
+
+<div data-role="page" id="pageFour" data-theme="b">
+<div data-role="header">
+	<h1> PERSONAL ASSISTANT</h1>
+     </div>
+
+<div role="main" class="ui-content">
+            <h1>Meeting SignUp Form</h1>
+		Event Name <input type= "text" name="name"  id="eName"/><br><br>
+		Username <input type= "text" name="username"  id="eUsername"/><br><br>
+		Password <input type= "password" name="password" id="ePassword"><br>
+		<br>
+		<button text="submit" width="60%" name="submit" id="signUp">SignUp</button>
+		<br>
+            
+        </div>
+ </div>
+</div>
+
+
+
+     
+     
+     
+     
+         
+ 
+     
+     
+     
+     
+  </body>
+  </html>
